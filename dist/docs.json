@@ -1,0 +1,98 @@
+{
+  "api": {
+    "name": "FaceCapturingPlugin",
+    "slug": "facecapturingplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "startCamera",
+        "signature": "(options?: { camera?: \"front\" | \"back\" | undefined; } | undefined) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ camera?: 'front' | 'back' | undefined; } | undefined"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "startcamera"
+      },
+      {
+        "name": "stopCamera",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "stopcamera"
+      },
+      {
+        "name": "capture",
+        "signature": "() => Promise<FaceCaptureResult>",
+        "parameters": [],
+        "returns": "Promise<FaceCaptureResult>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "FaceCaptureResult"
+        ],
+        "slug": "capture"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'faceDetected' | 'faceLost' | 'captureComplete', listenerFunc: (info: any) => void) => Promise<{ remove: () => void; }>",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "",
+            "type": "'faceDetected' | 'faceLost' | 'captureComplete'"
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(info: any) => void"
+          }
+        ],
+        "returns": "Promise<{ remove: () => void; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "addlistenerfacedetected--facelost--capturecomplete-"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "FaceCaptureResult",
+      "slug": "facecaptureresult",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "imageBase64",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "reason",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
