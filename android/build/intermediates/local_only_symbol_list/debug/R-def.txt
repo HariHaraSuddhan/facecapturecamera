@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_camera
+drawable ic_close
+drawable ic_flip_camera
+drawable round_button_background
+style Theme.FaceCapture.NoActionBar

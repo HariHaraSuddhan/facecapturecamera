@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.facecapturecamera.plugin">
+
+    <!-- Permissions go here -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        tools:replace="android:allowBackup,android:label">
+
+        <activity
+            android:name="com.facecapturecamera.plugin.CameraXActivity"
+            android:exported="true" 
+            android:theme="@style/Theme.FaceCapture.NoActionBar" />
+        
+    </application>
+
+</manifest>
